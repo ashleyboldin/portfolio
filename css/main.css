@@ -1,0 +1,362 @@
+/* Ashley Boldin portfolio site */
+
+/****** BASE STYLES ******/
+
+@font-face {
+    font-family: 'poppit_and_finch_scriptRg';
+    src: url('../fonts/poppitandfinch.woff2') format('woff2'),
+         url('../fonts/poppitandfinch.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #36454f;
+}
+
+#about, #contact {
+    height: 600px;
+}
+
+#skills {
+    height: 400px;
+}
+
+#portfolio-1 {
+    height: 650px;
+}
+#portfolio-2 {
+    height: 650px;
+}
+
+#portfolio-3 {
+    height: 650px;
+}
+
+#inspire {
+    height: 300px;
+}
+
+/****** GRID ******/
+
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+.half-width {
+    width: 600px;
+    float: left;
+}
+.third-width {
+    width: 400px;
+    float: left;
+}
+
+/****** HEADER ******/
+
+header {
+    height: 800px;
+    background: url('../img/hero.png');
+    background-size: cover;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: #bbc085;
+    padding: 65px 0 65px 25px;
+}
+nav {
+    float: right;
+    padding: 75px 25px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #828282;
+    padding-left: 80px;
+}
+header h2 {
+    width: 1000px;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 70px;
+    line-height: 80px;
+    color: #9b9b9b;
+    padding: 20px 0 20px 25px;
+}
+
+/* darken font color in header text */
+.darken {
+    color: #36454f; /* charcoal color */
+}
+
+
+/* lighten font color in header text */
+.lighten {
+    color: #f9ceb7; /* peach color */
+}
+
+.freshen {
+    color: #bbc085;
+}
+
+
+
+/****** ABOUT ******/
+
+#about .full-width {
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding-left: 50px;
+}
+
+#about p {
+    font-size: 21px;
+    color: #7f7f7f;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#about img#profile-img {
+    margin: auto;
+    border: 5px solid #f9ceb7;
+    display: block;
+    max-width: 70%;
+}
+
+#about h2#sig
+     {
+    font-family: 'poppit_and_finch_scriptRg';
+    color: #7f7f7f;;
+    text-align: right;
+    padding-top: 0;
+    padding-right: 75px;
+    font-size: 50px;
+}
+
+#about h2#sig #sig-sm {
+    font-size: 25px;
+}
+/****** SKILLS ******/
+
+#skills {
+    background-color: #f9ceb7;
+    text-align: center;
+}
+
+#skills .full-width {
+    padding: 90px 0;
+}
+
+#skills img {
+    padding-bottom: 30px;
+}
+
+#skills h3 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 190px;
+    margin: 0 auto;
+}
+
+#skills p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 50px;
+}
+
+/****** PORTFOLIO 1 ******/
+
+#portfolio-1 {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#portfolio-1 .full-width {
+    padding: 40px 0;
+}
+
+#portfolio-1 img {
+    padding-bottom: 30px;
+
+}
+
+#portfolio-1 h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding-bottom: 65px;  
+}
+
+#portfolio-1 h3 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#portfolio-1 p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 50px;
+}
+
+
+/****** PORTFOLIO 2 ******/
+
+#portfolio-2 {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#portfolio-2 .full-width {
+    padding: 115px 0 ;
+}
+
+#portfolio-2 img {
+    padding-bottom: 30px;
+}
+
+#portfolio-2 h3 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#portfolio-2 p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 50px;
+}
+
+/****** PORTFOLIO 3 ******/
+
+#portfolio-3 {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#portfolio-3 .full-width {
+    padding: 115px 0;
+}
+
+#portfolio-3 img {
+    padding-bottom: 30px;
+}
+
+#portfolio-3 h3 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#portfolio-3 p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 50px;
+}
+
+/****** INSPIRE ******/
+
+#inspire {
+    background-color: #f9ceb7;
+    text-align: center;
+}
+
+#inspire .full-width {
+    padding: 30px 0;
+}
+
+
+#inspire h2 {
+    font-family: 'poppit_and_finch_scriptRg';
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+/****** CONTACT ******/
+
+#contact {
+    background-color: #ebebeb;
+
+}
+#contact .full-width {
+    padding: 110px 0;
+}
+#contact img#contact-img {
+    margin-left: 25px;
+    border: 12px solid #ffffff;
+}
+
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+#contact #envelope {
+    padding: 0 10px 0 115px;
+}
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    line-height: 44px;
+}
+#contact #email-header{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: -30px 0 5px 0;
+}
+#contact #socialmedia-header {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 44px;
+    margin: 40px 0 0 0;
+}
+#contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 28px;
+}
+#contact ul {
+    list-style: none;
+}
+#contact ul li {
+     display: inline-block;
+}
+#contact ul img {
+    font-size: 32px;
+    padding-right: 48px;
+}
+
+/****** FOOTER ******/
+
+footer {
+    background-color: #ebebeb;
+    padding: 1px;
+    height: 50px;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+}
