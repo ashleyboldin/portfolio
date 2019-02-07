@@ -2,6 +2,10 @@
 
 /****** BASE STYLES ******/
 
+html {
+    display: block;
+}
+
 @font-face {
     font-family: 'poppit_and_finch_scriptRg';
     src: url('../fonts/poppitandfinch.woff2') format('woff2'),
@@ -14,7 +18,10 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #36454f;
+    min-width: 1275px;
+    font-size: 16px;
 }
+
 
 #about, #contact {
     height: 600px;
@@ -24,14 +31,7 @@ body {
     height: 400px;
 }
 
-#portfolio-1 {
-    height: 650px;
-}
-#portfolio-2 {
-    height: 650px;
-}
-
-#portfolio-3 {
+#portfolio-1, #portfolio-2, #portfolio-3 {
     height: 650px;
 }
 
@@ -42,15 +42,16 @@ body {
 /****** GRID ******/
 
 .full-width {
-    width: 1200px;
+    width: 95%; /* 1200 */
     margin: 0 auto;
+
 }
 .half-width {
-    width: 600px;
+    width: 50%; /* 600px */
     float: left;
 }
 .third-width {
-    width: 400px;
+    width: 33.33%; /* 400px */
     float: left;
 }
 
@@ -60,17 +61,19 @@ header {
     height: 800px;
     background: url('../img/hero.png');
     background-size: cover;
+    display: block;
 }
 
 header h1 {
     font-family: 'Lora', serif;
-    font-size: 30px;
+    font-size: 2em; /* 30px */
     color: #bbc085;
     padding: 65px 0 65px 25px;
 }
 nav {
     float: right;
-    padding: 75px 25px;
+    padding: 75px 40px;
+    display: block;
 }
 nav ul li{
     display: inline-block;
@@ -78,16 +81,16 @@ nav ul li{
 nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125em; /* 18px */
     color: #828282;
     padding-left: 80px;
 }
 header h2 {
-    width: 1000px;
+    width: 78.43%; /* 1000px */
     clear: both;
     font-family: 'Lora', serif;
-    font-size: 70px;
-    line-height: 80px;
+    font-size: 4.25em; /* 68px */
+    line-height: 80px; /* 80px */
     color: #9b9b9b;
     padding: 20px 0 20px 25px;
 }
@@ -117,16 +120,17 @@ header h2 {
 
 #about h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 2.25em; /* */
     padding-left: 50px;
 }
 
 #about p {
-    font-size: 21px;
+    font-size: 1.3125em; /* 21px */
     color: #7f7f7f;
     line-height: 40px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 0px;
 }
 
 #about img#profile-img {
@@ -143,11 +147,11 @@ header h2 {
     text-align: right;
     padding-top: 0;
     padding-right: 75px;
-    font-size: 50px;
+    font-size: 3.125em; /* 50px */
 }
 
 #about h2#sig #sig-sm {
-    font-size: 25px;
+    font-size: 0.5em; /* 25px */ 
 }
 /****** SKILLS ******/
 
@@ -165,7 +169,7 @@ header h2 {
 }
 
 #skills h3 {
-    font-size: 24px;
+    font-size: 1.5em; /* 24px */ 
     line-height: 32px;
     width: 190px;
     margin: 0 auto;
@@ -173,7 +177,7 @@ header h2 {
 
 #skills p {
     font-family: 'Lora', serif;
-    font-size: 18px;
+    font-size: 1.125em; /* 18px */ 
     line-height: 30px;
     padding: 0 50px;
 }
@@ -196,12 +200,12 @@ header h2 {
 
 #portfolio-1 h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 2.25em; /* 36px */
     padding-bottom: 65px;  
 }
 
 #portfolio-1 h3 {
-    font-size: 24px;
+    font-size: 1.5em; /* 24px */
     line-height: 32px;
     width: 400px;
     margin: 0 auto;
@@ -209,7 +213,7 @@ header h2 {
 
 #portfolio-1 p {
     font-family: 'Lora', serif;
-    font-size: 18px;
+    font-size: 1.125em; /* 18px */
     line-height: 30px;
     padding: 0 50px;
 }
@@ -231,7 +235,7 @@ header h2 {
 }
 
 #portfolio-2 h3 {
-    font-size: 24px;
+    font-size: 1.5em; /* 24px */ 
     line-height: 32px;
     width: 400px;
     margin: 0 auto;
@@ -239,7 +243,7 @@ header h2 {
 
 #portfolio-2 p {
     font-family: 'Lora', serif;
-    font-size: 18px;
+    font-size: 1.125em; /* 18px */
     line-height: 30px;
     padding: 0 50px;
 }
@@ -260,7 +264,7 @@ header h2 {
 }
 
 #portfolio-3 h3 {
-    font-size: 24px;
+    font-size: 1.5em; /* 24px */
     line-height: 32px;
     width: 400px;
     margin: 0 auto;
@@ -268,7 +272,7 @@ header h2 {
 
 #portfolio-3 p {
     font-family: 'Lora', serif;
-    font-size: 18px;
+    font-size: 1.125em; /* 18px */
     line-height: 30px;
     padding: 0 50px;
 }
@@ -287,7 +291,7 @@ header h2 {
 
 #inspire h2 {
     font-family: 'poppit_and_finch_scriptRg';
-    font-size: 60px;
+    font-size: 3.75em; /* 60px */
     letter-spacing: 4px;
     text-align: center;
     line-height: 32px;
@@ -318,18 +322,18 @@ header h2 {
 }
 #contact h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 2.25em; /* 36px */
     line-height: 44px;
 }
 #contact #email-header{
-    font-size: 32px;
+    font-size: 2em; /* 32px */
     font-weight: 400;
     line-height: 44px;
     margin: -30px 0 5px 0;
 }
 #contact #socialmedia-header {
     font-weight: bold;
-    font-size: 29px;
+    font-size: 1.8125em; /* 29px */
     line-height: 44px;
     margin: 40px 0 0 0;
 }
@@ -337,7 +341,7 @@ header h2 {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75em; /* 28px */
 }
 #contact ul {
     list-style: none;
@@ -346,7 +350,7 @@ header h2 {
      display: inline-block;
 }
 #contact ul img {
-    font-size: 32px;
+    font-size: 2em; /* 32px */ 
     padding-right: 48px;
 }
 
